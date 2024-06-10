@@ -1,0 +1,71 @@
+/* Basic styles for body, main, and container */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar-content {
+    flex: 0 0 200px; /* Sidebar width */
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px;
+}
+
+.page-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    text-align: left;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav#links {
+    margin-top: 20px;
+}
+
+nav#links a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #000;
+}
+
+nav#links a:hover {
+    font-weight: bolder;
+}
+
+/* Optional: Add some styles for the images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px;
+    padding: 20px;
+}
+
+#link {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000;
+}
