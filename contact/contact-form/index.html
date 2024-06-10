@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- Thank you to Chat GBT + the Banksy website for code advice. -->
+<!-- Thank you to Chat GBT + www.codebrainer.com for walking me through the process of creating a contact page.-->
 
 <head>
 	<!-- This title is used for tabs and bookmarks -->
@@ -39,8 +39,20 @@
 			</aside>
 			<!--page content-->
 			<div class="page-content">
-                <h1>Contact</h1>
-                <p>goal: figure out how to send things to me via email here!</p>
+                <h2>Contact Alexandru:</h2>
+				<!--input below-->
+                <form id="contactForm" onsubmit="sendContact(); return false;">
+					<input type="text" id="firstName" placeholder="Enter your first name" required>
+					<input type="text" id="lastName" placeholder="Enter your last name" required>
+					<input type="email" id="email" placeholder="Enter your email" required>
+					<span>What is your message?</span><br>
+					<textarea id="message" rows="4"></textarea>
+					<button onclick="submit();">Submit</button>
+				</form>
+				
+				<!--Instagram Alternative-->
+				<h2>Or follow his Instagram: </h2>
+				<a id="instagram-link" href="https://www.instagram.com/fart_slayer_/"> <img src="img/instagram.png" width="45px" style="display:inline-block; vertical-align: middle;">@fart_slayer_ </a>
 			</div>
 		</div>
 	</main>
